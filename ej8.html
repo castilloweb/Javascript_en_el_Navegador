@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+		'use strict'
+				window.alert('Vamos a sumar todos los números que ingrese')
+		let numero = parseFloat(window.prompt('Ingrese un número'))
+
+		//En esta variable guardo los números que se ingresan como un ARRAY
+		let promedioNums = []
+		promedioNums.unshift(numero)
+		
+		let calculadora = function(){
+		console.log(numero)
+		var otro = confirm('Quiere ingresar otro número?')
+		
+		if(otro === true){
+			var numero2 = parseFloat(window.prompt('ingrese un número'))
+			//Agrego otros numeros al ARRAY
+			let promedioNum2 = numero2
+			promedioNums.unshift(numero2)
+			
+			numero = numero + numero2
+			//Sumo los numeros ingresados al ARRAY
+			let suma = promedioNums.reduce(function(total, promedioNum){
+				return total+promedioNum
+			})
+			
+			//Promedio los números ingresados
+			let promedio = suma / promedioNums.length
+			
+			window.alert(`resultado = ${numero}`)
+			window.alert(`promedio ${promedio}`)
+			calculadora()
+		} else {
+			window.alert(`resultado = ${numero}`)
+			window.alert(`promedio ${promedio}`)
+		}
+		
+		return numero
+		}
+		calculadora()
+
+		</script>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>

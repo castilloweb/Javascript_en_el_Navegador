@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+		'use strict'
+		window.alert('Vamos a sumar todos los números que ingrese')
+		let numero = parseFloat(window.prompt('Ingrese un número'))
+		
+		let calculadora = function(){
+		console.log(numero)
+		var otro = confirm('Quiere ingresar otro número?')
+		
+		if(otro === true){
+			var numero2 = parseFloat(window.prompt('ingrese un número'))
+			numero = numero + numero2
+			window.alert(numero)
+			calculadora()
+		} else {
+			window.alert(numero)
+		}
+			
+		return numero
+		}
+		calculadora()
+
+		</script>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
