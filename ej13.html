@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+		'use strict'
+		let segundos = parseInt(prompt('Ingrese la cantidad de segundos que quiere ver el documento'))
+
+		let numero = 1
+		
+		let intervalo = function(){
+			if (numero < segundos){
+				console.log(numero)
+			} else{
+				clearInterval(contador)
+				alert('Ha caducado su sesión, por favor vuelve a ingresar')
+			}
+
+			numero++
+		}
+
+		let contador = setInterval(intervalo, 1000)
+
+	</script>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+		let user = prompt('Ingrese su nombre de usuario')
+		let pass = prompt('Ingrese su password')
+		alert(`Bienvenido ${user}`)
+
+		let fiveSeconds = setTimeout(function(){
+			var logContinue = confirm('Quiere seguir logueado?')
+			if (logContinue === true){
+				alert(`${user} renovamos tu sesión`)
+			} else {
+				alert(`${user} ha caducado su sesión`)
+			}
+		}, 5000)
+		
+		
+	</script>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>

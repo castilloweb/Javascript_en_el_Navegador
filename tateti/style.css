@@ -1,0 +1,22 @@
+#contenedor {
+     width: 600px;
+     margin: 0 auto ;
+     background: greenyellow ;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 33vh 33vh 33vh;
+
+}
+.cuadrados { 
+    margin: 5px ;
+    border: solid 1px black;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.jugador1{
+    background: red;
+}
+.jugadorPc{
+    background: blueviolet;
+}

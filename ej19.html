@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>
+    window.onload = function(){
+      cambio()
+    }
+    let titulo = document.querySelector('h1')
+    let elemento = document.querySelector('div')
+    let cambio = function(){
+      if ((titulo.hasAttributes() === true) || (elemento.hasAttributes() === true)){
+        elemento.setAttribute('class', 'tachado')
+      } else {
+        elemento.setAttribute('class', 'negrita')
+      }
+    }
+  </script>
+  <title>Establecer Atributos</title>
+  <style>
+    .negrita {
+      font-weight: bold;
+    }
+    .tachado {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="principal">Jugando con atributos</h1>
+  <div>De a poco vamos teniendo control sobre nuestros documentos!!!</div>
+</body>
+</html>
