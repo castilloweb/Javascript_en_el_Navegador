@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+		window.onload = function(){
+			textosMod()
+		}
+		let textosMod = function(){
+			let titulo = document.querySelector('h1')
+			let tituloTexto = titulo.innerText
+			let parrafo = document.querySelector('p')
+			let parrafoTexto = parrafo.textContent
+			titulo.textContent = parrafoTexto
+			parrafo.textContent = tituloTexto
+		}
+	</script>
+  <title>Textos</title>
+</head>
+<body>
+  <h1>Titulo</h1>
+  <p>Parrafo</p>
+  <ul></ul>
+</body>
+</html>

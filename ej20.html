@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.onload = function(){
+      familia()
+    }
+    
+    let familia = function(){
+      let lista = document.querySelector('ul')
+      console.log(lista.children)
+      let hijo2 = lista.children[1]
+      hijo2.classList.add('verde')
+      let hijo4 = lista.children[3]
+      hijo4.classList.add('rojo')
+      console.log(hijo2.parentElement)
+      let padre = hijo4.parentElement
+      padre.classList.add('naranja')
+    }
+  </script>
+  <title>Elementos</title>
+  <style>
+    .rojo {
+      color: red;
+    }
+    .verde {
+      color: green;
+    }
+    .naranja {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+</body>
+</html>

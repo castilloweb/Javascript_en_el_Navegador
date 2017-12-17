@@ -32,8 +32,8 @@ let pintarCuadrado = function(jugador, numero){
 	}
 }
  let juegaPc = function(){
- 	var numeroPc = return Math.floor(Math.random() * (10 - 1)) + 1;
- 	if //CONTINUAR DESDE ACÁ
+ 	var numeroPc = Math.floor(Math.random() * (10 - 1)) + 1;
+ 	if ()
  }
 
 

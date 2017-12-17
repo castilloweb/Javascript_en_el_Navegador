@@ -6,13 +6,16 @@
     window.onload = function(){
       cambio()
     }
-    let titulo = document.querySelector('h1')
-    let elemento = document.querySelector('div')
+    
     let cambio = function(){
-      if ((titulo.hasAttributes() === true) || (elemento.hasAttributes() === true)){
-        elemento.setAttribute('class', 'tachado')
-      } else {
-        elemento.setAttribute('class', 'negrita')
+      let titulo = document.querySelector('h1')
+      let elemento = document.querySelector('div')
+        if (titulo.hasAttributes()){
+        titulo.classList.add('tachado')
+        } else if(elemento.hasAttributes()){
+          titulo.classList.add('tachado')
+        } else {
+          titulo.classList.add('negrita')
       }
     }
   </script>

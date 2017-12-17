@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+		window.onload = function(){
+			cambios()
+		}
+
+		let cambios = function(){
+			let cuerpo = document.querySelector('body')
+			let nombres = ['Juan', 'Carlos', 'Pedro', 'Roberto', 'Luis', 'Andres', 'Ezequiel', 'Uriel', 'Nicolas', 'Benjamin']
+			let lista = document.createElement('ul')
+			let elemento = 0
+		
+			nombres.forEach(function(nombre, indice){
+				elemento = document.createElement('li')
+				elemento.textContent = nombre
+				lista.appendChild(elemento)
+			})
+			cuerpo.appendChild(lista)
+		}
+	</script>
+  <title>Todo ECMAScript Baby!!</title>
+</head>
+<body>
+</body>
+</html>
